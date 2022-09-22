@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(129, 173, 117);
+    /* background-image: ; */
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background-image: linear-gradient(to bottom ,black,green);
+    color: whitesmoke;
+    border-radius: 20px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+header input{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(76, 131, 36, 0.096);
+    color: rgb(241, 239, 239);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid green;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+
+}
+header input:focus{
+    background-color:  rgba(98, 185, 36, 0.308);
+
+}
+main{
+    flex: 1 1 100;
+    padding: 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+}
+.location .city{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.current .temp{
+    color: rgb(14, 13, 13);
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow:  2px 2px rgb(99, 134, 99);
+}
+.current .temp span{
+    font-weight: 500;
+}
+
+.current .weather{
+    color: rgba(24, 189, 46, 0.63);
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px green;
+
+}
+.current.hi-low{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgb(101, 218, 7);
+}
